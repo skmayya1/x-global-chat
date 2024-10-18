@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    overflow: overlay;
+}
+
+
+
+#messageContainer::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+#messageContainer::-webkit-scrollbar-thumb {
+    background: rgb(163, 18, 18);   
+}
+
+#messageContainer::-webkit-scrollbar-track {
+    background: rgba(185, 13, 13, 0.2);
+}

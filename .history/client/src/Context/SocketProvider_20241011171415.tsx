@@ -1,0 +1,21 @@
+"use client"
+
+import React, { createContext } from "react"
+
+interface SocketProviderProps {
+    children?: React.ReactNode
+}
+
+interface socketContext {
+    sendMessage : (message: string) => any
+}
+
+const SocketContext = createContext<socketContext | undefined>(null)
+
+export const SocketProvide: React.FC<SocketProviderProps> = ({ children }) => {
+    return (
+        <SocketContext.Provider value={send}>
+            {children}
+        </SocketContext.Provider>
+    )
+}
