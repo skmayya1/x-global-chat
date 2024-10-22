@@ -7,9 +7,9 @@ import prisma from "./prisma";
 
 const kafka = new Kafka({
     brokers: ['kafka-2a705445-chat-app-redis-scalable.h.aivencloud.com:11490'],
-    ssl: {
-        ca: [fs.readFileSync(path.resolve('./ca.pem'), 'utf-8')],
-    },
+  ssl: {
+    ca: [fs.readFileSync('/etc/secrets/ca.pem', 'utf-8')],
+  },
     sasl: {
         username: process.env.kafka_user || '',
         password: process.env.kafka_password || '',
