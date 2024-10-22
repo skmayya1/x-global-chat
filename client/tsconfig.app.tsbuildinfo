@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/Components/Message.tsx","./src/Components/Reply.tsx","./src/Context/SocketProvider.tsx","./src/Pages/GlobalChat.tsx","./src/Pages/SigninSignup.tsx","./src/Utils/generateId.ts"],"version":"5.6.3"}
