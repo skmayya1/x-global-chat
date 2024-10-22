@@ -67,7 +67,7 @@ export const SocketProvider: React.FC<SocketProviderProps> = ({ children }) => {
     },[]);
 
     useEffect(() => {
-        socketRef.current = io('http://localhost:3000');
+        socketRef.current = io('https://x-global-chat.onrender.com');
 
         const socket = socketRef.current;
 
